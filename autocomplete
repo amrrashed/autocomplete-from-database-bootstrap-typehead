@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title></title>
+<meta charset="utf-8">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/typeahead.js"></script> 
+<style>
+.typeahead-devs, .tt-hint,.university_ID {
+    border: 2px solid #CCCCCC;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    height: 45px;
+    line-height: 30px;
+    outline: medium none;
+    padding: 8px 12px;
+    width: 300px;
+}
+
+.tt-dropdown-menu {
+  width: 300px;
+  margin-top: 5px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px 8px 8px 8px;
+  font-size: 18px;
+  color: #111;
+  background-color: #F1F1F1;
+}
+
+</style>
+<script>
+$(document).ready(function() {
+
+$('input.university_ID').typeahead({
+  name: 'university_ID',
+  remote : 'univerid.php?query=%QUERY'
+});
+
+});
+</script>
+</head>
+<body>
+<div>
+
+<form method="POST" action="#">
+
+<h3>Select data from Database</h3>
+<input type="text" id="university_ID" name="university_ID" size="20" class="university_ID" placeholder="ادخل الرقم الاكاديمي">
+	
+	
+</form>
+</div>    
+</body>
+</html>

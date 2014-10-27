@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.7.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 27, 2014 at 04:28 PM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `teachercollage`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `basic_information`
+--
+
+CREATE TABLE IF NOT EXISTS `basic_information` (
+  `ID` int(11) DEFAULT '0',
+  `university_ID` int(11) NOT NULL DEFAULT '0',
+  `first_name` varchar(50) DEFAULT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `last_name` varchar(50) DEFAULT NULL,
+  `family` varchar(50) DEFAULT NULL,
+  `birthdated` varchar(155) DEFAULT NULL,
+  `placebirth` varchar(155) DEFAULT NULL,
+  `dept` varchar(255) DEFAULT NULL,
+  `gen_specific` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `tele` varchar(150) DEFAULT NULL,
+  `mobile` varchar(50) DEFAULT NULL,
+  `mail` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `basic_information`
+--
+
+INSERT INTO `basic_information` (`ID`, `university_ID`, `first_name`, `middle_name`, `last_name`, `family`, `birthdated`, `placebirth`, `dept`, `gen_specific`, `address`, `tele`, `mobile`, `mail`) VALUES
+(111, 1234, 'aaaaaaaaaa', 'bbbb', 'ccccccccc', 'ddddddddd', '1433-5-6', 'uuuuu', 'اللغة العربية', 'لغة عربية', '                                   jjjjjjjjjjjjjjjjjj           ', '77777777', '999999', 'aa@hhhh.com'),
+(777, 8888, 'hhhh', 'jjjjjjjjj', 'pppppp', 'lllllllllll', '0-0-0', 'gggff', 'اللغة الانجليزية', 'لغة انجليزية', '                                              ', '', '', ''),
+(7778, 4455, 'aaaa', 'bbbb', 'cccc', 'ddddd', '1433-5-6', 'ffffff', 'اللغة العربية', 'لغة انجليزية', '            sssssssssssssssssssss                 ', '2222222222', '55555555', 'aaaaaa@tttt.com'),
+(2147483647, 55555555, 'قققققق', 'ععععععععع', 'ححححححح', 'بببببببب', '1385-4-5', 'ااااااااااااا', 'الاجتماعيات', 'المناهج والتقنيات', '                 ', '', '', ''),
+(2147483647, 7777, 'قققققق', 'ععععععععع', 'ححححححح', 'بببببببب', '1385-4-5', 'ااااااااااااا', 'الاجتماعيات', 'المناهج والتقنيات', '                 ', '', '', ''),
+(444, 12346, 'سسسسس', 'سسسسسس', 'سسسسسسسس', '', '0-0-0', '', '0', '0', '                 ', '', '', ''),
+(5555, 123488, 'rrrr', 'hhhhhhh', 'pppppppp', '', '0-0-0', '', '0', '0', '                 ', '', '', ''),
+(555, 123468, 'qqqq', 'yyyyyy', 'uuuuuu', 'kkkkkkk', '1383-3-4', 'ggggggggggg', 'اللغة الانجليزية', 'المناهج والتقنيات', '                 hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', '88888888', '7777777777', 'aaaaaaa@hhhhhhh.com'),
+(666, 123469, 'aaaa', 'bbb', 'cccc', 'dddd', '1385-4-4', '', '0', '0', '                 ', '', '', ''),
+(33444, 233, 'aaa', 'ffff', 'gggg', 'kkkk', '1383-3-5', 'wwwwwwwwww', 'اللغة الانجليزية', 'لغة انجليزية', '                        ddddddddddddddddddddddddddddd                                                   ', '33333333', '444444444', 'aaa@hotmail.com');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `basic_information`
+--
+ALTER TABLE `basic_information`
+ ADD PRIMARY KEY (`university_ID`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
